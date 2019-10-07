@@ -66,6 +66,19 @@
   margin-left: 0;
 }
 
+.navbar-menu__link {
+  text-decoration: none;
+}
+
+.navbar-menu__link:visited {
+  color: #fff;
+}
+
+.navbar-menu__link:hover {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
 .navbar-buttons {
   margin-left: 37px;
   display: -webkit-box;
@@ -91,6 +104,8 @@
   background-color: #E3B873;
   border: none;
   border-radius: 2px;
+  outline: none;
+  cursor: pointer;
 }
 
 .navbar-buttons__phone {
@@ -174,22 +189,112 @@
 }
 
 .hero-button__calculate {
+  height: 52px;
+  width: 210px;
   position: relative;
   z-index: 1;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  border: none;
+  font-family: FuturaDemiC;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
 }
 
 .hero-button__application {
+  margin-left: 20px;
+  height: 52px;
+  width: 210px;
   position: relative;
   z-index: 1;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  font-family: FuturaDemiC;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  background: transparent;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
 }
 
-.scrollDown {
+.sidebar {
+  position: relative;
+}
+
+.instagram-link {
+  font-family: 'FuturaDemiC';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 275px;
+  left: 0;
+}
+
+.instagram-line {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  position: absolute;
+  z-index: 1;
+  height: 2px;
+  width: 51px;
+  background-color: #E3B873;
+  top: 6px;
+  left: 98px;
+}
+
+.scrolldown {
   position: absolute;
   background-color: #131313;
   width: 247px;
   height: 97px;
   left: 0;
   bottom: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrolldown-link {
+  font-family: 'Yeseva One';
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scrolldown-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -280,5 +385,45 @@ footer {
   width: 100%;
   background-color: #131313;
   margin-top: -20px;
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../assets/fonts/FuturaBookC.eot");
+  src: url("../assets/fonts/FuturaBookC?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaBookC.woff") format("woff"), url("../assets/fonts/FuturaBookC.woff2") format("woff2"), url("../assets/fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../assets/fonts/ProximaNova-Regular.eot");
+  src: url("../assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../assets/fonts/FuturaDemiC.eot");
+  src: url("../assets/fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaDemiC.woff2") format("woff2"), url("../assets/fonts/FuturaDemiC.woff") format("woff"), url("../assets/fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("../assets/fonts/FuturaMediumC.eot");
+  src: url("../assets/fonts/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaMediumC.woff2") format("woff2"), url("../assets/fonts/FuturaMediumC.woff") format("woff"), url("../assets/fonts/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../assets/fonts/YesevaOne.eot");
+  src: url("../assets/fonts/YesevaOne.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/YesevaOne.woff2") format("woff2"), url("../assets/fonts/YesevaOne.woff") format("woff"), url("../assets/fonts/YesevaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
