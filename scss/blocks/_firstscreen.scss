@@ -1,4 +1,5 @@
 .heroscreen {
+    margin-top: 83px;
     background-color: #131313;
     height: 707px;
     display: flex;
@@ -12,7 +13,6 @@
     position: relative;
 }   
 .hero {
-    margin-top: 83px;
     width: 100%;
     height: 707px;
     background: url('/assets/img/firstScreen/bg.png');
@@ -68,7 +68,7 @@
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
             border-radius: 2px;
             border: none;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             text-transform: uppercase;
             font-size: 13px;
             line-height: 15px;
@@ -117,7 +117,7 @@
         z-index: 1;
         cursor: pointer;
         position: absolute;
-        top: 275px;
+        top: 190px;
         left: 0;
     }
     &-line {
@@ -137,7 +137,7 @@
     width: 247px;
     height: 97px;
     left: 0;
-    bottom: 104px;
+    bottom: 78px;
     display: flex;
     align-items: center;
     justify-content: center;
