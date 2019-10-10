@@ -11,6 +11,29 @@
 a {
     text-decoration: none;
 }
+.black {
+    color: #181818;
+}
+
+.white {
+    color: #FFFFFF;
+}
+.title {
+    &-text {
+        margin-top: 83px;
+        
+        font-family: 'Yeseva One';
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;    
+    }
+    &-svg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
 
 @media (max-width: 375px) {
     .container{

@@ -1,5 +1,83 @@
-.repairTypes {
+.repairtypes {
     background-color: #fff;
     height: 706px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.repairtypes {
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    &-box {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+        width: 30%;
+        height: 45vh;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        &__title {
+            font-family: 'Yeseva One';
+            font-size: 18px;
+            line-height: 25px;
+            color: #363636;
+            margin-left: 50px;
+        }
+        
+        &__item {
+            margin-left: 25px;
+            font-family: 'FuturaBookC';
+            font-size: 15px;
+            line-height: 25px;
+            color: #959595;
+        } 
+        &__price {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: #E3B873;
+            height: 54px;
+            width: 228px;
+            position: absolute;
+            bottom: -27px;
+            left: 0;
+            font-family: 'Yeseva One';
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        } 
+    }
+    &-white {
+        margin-top: 300px;
+        background-color: #fff;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        height: 30vh;
+        min-width: 85%;
+        position: relative;
+    }
+    
+    
+}
+.contain {
+    background-size: cover;
+    background-position: center;
+}
+.redecor {
+    background-image: url(/assets/img/repairtypes/1.png);
+    
+}
+.overhaul { 
+    background-image: url(/assets/img/repairtypes/2.png);
+   
+}
+.designer {
+    background-image: url(/assets/img/repairtypes/3.png);
+    
 }

@@ -1,3 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin-top: 83px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.black {
+  color: #181818;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.title-text {
+  margin-top: 83px;
+  font-family: 'Yeseva One';
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
 .navbar {
   position: fixed;
   z-index: 2;
@@ -493,22 +541,7 @@
   margin-top: -350px;
 }
 
-.onlinecontrol-title__text {
-  font-family: 'Yeseva One';
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.onlinecontrol-title__svg {
-  width: 15%;
-  margin: 0 auto;
-}
-
 .onlinecontrol-video {
-  margin-top: 32px;
   width: 817px;
   height: 434px;
 }
@@ -665,10 +698,100 @@ input[type=checkbox]:checked + label::before {
   height: 17px;
 }
 
-.repairTypes {
+.repairtypes {
   background-color: #fff;
   height: 706px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.repairtypes-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.repairtypes-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  width: 30%;
+  height: 45vh;
+}
+
+.repairtypes-box:last-child {
+  margin-right: 0;
+}
+
+.repairtypes-box__title {
+  font-family: 'Yeseva One';
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+  margin-left: 50px;
+}
+
+.repairtypes-box__item {
+  margin-left: 25px;
+  font-family: 'FuturaBookC';
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+.repairtypes-box__price {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #E3B873;
+  height: 54px;
+  width: 228px;
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  font-family: 'Yeseva One';
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.repairtypes-white {
+  margin-top: 300px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  height: 30vh;
+  min-width: 85%;
+  position: relative;
+}
+
+.contain {
+  background-size: cover;
+  background-position: center;
+}
+
+.redecor {
+  background-image: url(/assets/img/repairtypes/1.png);
+}
+
+.overhaul {
+  background-image: url(/assets/img/repairtypes/2.png);
+}
+
+.designer {
+  background-image: url(/assets/img/repairtypes/3.png);
 }
 
 .features {

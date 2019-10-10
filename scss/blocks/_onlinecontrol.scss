@@ -7,23 +7,7 @@
 }
 
 .onlinecontrol {
-    &-title {
-        &__text {
-            font-family: 'Yeseva One';
-            font-size: 20px;
-            line-height: 28px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            
-        }
-        &__svg {
-            width: 15%;
-            margin: 0 auto;
-        }
-    }
     &-video {
-        margin-top: 32px;
         width: 817px;
         height: 434px;
     }
