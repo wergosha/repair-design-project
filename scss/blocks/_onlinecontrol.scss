@@ -1,5 +1,163 @@
-.onlineControl {
-    background-color: #fff;
-    height: 900px;
-    width: 100%;
+.control-wrapper {
+    height: 1000px;
+    max-width: 817px;
+    // background-color: red;
+    margin: 0 auto;
+    margin-top: -350px;
 }
+
+.onlinecontrol {
+    &-title {
+        &__text {
+            font-family: 'Yeseva One';
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+        }
+        &__svg {
+            width: 15%;
+            margin: 0 auto;
+        }
+    }
+    &-video {
+        margin-top: 32px;
+        width: 817px;
+        height: 434px;
+    }
+    &-text {
+        margin-top: 100px;
+        text-align: center;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -45px;
+            left: 372px;
+            width: 54px;
+            height: 2px;
+            background-color: #E3B873;
+
+        }
+        &__item {
+            font-family: 'FuturaBookC';
+            font-size: 20px;
+            line-height: 34px;
+            color: #363636;
+            margin: 0 auto;
+        }
+    }
+    &-offer {
+        display: flex; 
+        justify-content: space-around;
+        margin-top: 83px;
+        position: relative;
+        &::before {
+            content: 'Name';
+            position: absolute;
+            top: 5px;
+            left: 45px;
+            font-family: 'FuturaBookC';
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(54, 54, 54, 0.5);
+        }
+        &::after {
+            content: 'Phone';
+            position: absolute;
+            top: 5px;
+            right: 473px;
+            font-family: 'FuturaBookC';
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(54, 54, 54, 0.5);
+        }
+        &__name {
+            font-family: 'FuturaBookC';
+            align-self: flex-end;
+            height: 31px;
+            font-size: 18px;
+            line-height: 24px;
+            border: none;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.3);      
+            outline: none;
+            
+           
+        }
+        &__phone {
+            font-family: 'FuturaBookC';
+            align-self: flex-end;
+            height: 31px;
+            font-size: 18px;
+            line-height: 24px;
+            border: none;
+            border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+            outline: none;
+        }
+        &__submit {
+            background-color: #E3B873;
+            border: none;
+            height: 51px;
+            width: 200px;
+            font-family: 'FuturaDemiC';
+            font-size: 15px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &-personal {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        &__check {
+            opacity: 0;    
+        }
+        &__text {
+            font-family: 'FuturaBookC';
+            font-size: 16px;
+            line-height: 22px;
+            color: #181818;
+            position: relative;
+            padding-left: 10px;
+            &::before {
+                content: '';
+                display: inline-block;
+                height: 18px;
+                width: 18px;
+                border: none;
+                background-color: #E3B873;   
+                border-radius: 2px;
+                position: absolute;
+                top: 2px;
+                left: -25px;
+                cursor: pointer;
+            }        
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 4px;
+                width: 9px;
+                border-left: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                transform: rotate(-45deg);
+                position: absolute;
+                left: -21px;
+                top: 7px;  
+                cursor: pointer;  
+                  
+            }
+        }
+    }
+}
+
+input[type=checkbox]:checked + label::before {
+    background-color: #fff;
+    border: 1px solid #E3B873;
+    width: 17px;
+    height: 17px;
+}
+

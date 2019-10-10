@@ -1,7 +1,7 @@
 .heroscreen {
     margin-top: 83px;
     background-color: #131313;
-    height: 707px;
+    height: 80vh;
     display: flex;
 
 }
@@ -25,7 +25,7 @@
         display: block;
         background: rgba(19, 19, 19, 0.7);
         width: 100%;
-        height: 707px;
+        height: 90vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -86,7 +86,7 @@
             border: 1px solid #FFFFFF;
             box-sizing: border-box;
             border-radius: 2px;
-            font-family: FuturaDemiC;
+            font-family: 'FuturaDemiC';
             text-transform: uppercase;
             font-size: 13px;
             line-height: 15px;
@@ -137,7 +137,7 @@
     width: 247px;
     height: 97px;
     left: 0;
-    bottom: 78px;
+    bottom: 127px;
     display: flex;
     align-items: center;
     justify-content: center;
