@@ -104,7 +104,6 @@
             font-family: 'FuturaBookC';
             font-size: 16px;
             line-height: 22px;
-            color: #181818;
             position: relative;
             padding-left: 10px;
             &::before {
@@ -131,8 +130,7 @@
                 position: absolute;
                 left: -21px;
                 top: 7px;  
-                cursor: pointer;  
-                  
+                cursor: pointer;         
             }
         }
     }
